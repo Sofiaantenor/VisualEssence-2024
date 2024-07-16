@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "angular-sanitize": "^1.8.3",
+    "angular-translate": "^2.18.1",
+    "angular-translate-interpolation-messageformat": "^2.18.1",
+    "angular-translate-loader-partial": "^2.18.1",
+    "messageformat": "^2.3.0"
+  }
+}
