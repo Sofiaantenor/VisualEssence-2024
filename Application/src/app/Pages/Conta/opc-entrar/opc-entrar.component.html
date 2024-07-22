@@ -2,7 +2,8 @@
   <div class="conteudo-central">
     <div class="both-cont">
       <div class="cont-img">
-        <img [src]="imagemFundo">
+          <img [src]="imagemFundo" alt="Imagem de Fundo">
+          
       </div>
       <div class="box-opc">
         <div class="opc-texto">
@@ -10,11 +11,16 @@
           <br>
           <p class="p2">Entrar como</p>
         </div>
-
         <div class="opc-botoes">
           <a routerLink="/login-inst" routerLinkActive="active" ariaCurrentWhenActive="page">Instituição</a> <br>
           <a routerLink="/login-pais" routerLinkActive="active" ariaCurrentWhenActive="page">Pais</a>
         </div>
-        </div>
+      </div>
+
     </div>
+  </div>
+  <button id="button-with-image" class="button-with-image" (click)="changeImage()">
+    <img [src]="botaoImagemSrc" alt="Botão" id="botao_imagem">
+  </button>
 </div>
+

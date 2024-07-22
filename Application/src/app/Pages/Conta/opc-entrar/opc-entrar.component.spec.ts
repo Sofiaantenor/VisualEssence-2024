@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { OpcEntrarComponent } from './opc-entrar.component';
 
 describe('OpcEntrarComponent', () => {
@@ -8,10 +7,10 @@ describe('OpcEntrarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OpcEntrarComponent]
+      declarations: [ OpcEntrarComponent ]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(OpcEntrarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

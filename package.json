@@ -5,5 +5,9 @@
     "angular-translate-interpolation-messageformat": "^2.18.1",
     "angular-translate-loader-partial": "^2.18.1",
     "messageformat": "^2.3.0"
+  },
+  "dependencies": {
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0"
   }
 }

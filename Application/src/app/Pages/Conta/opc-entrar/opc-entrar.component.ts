@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-opc-entrar',
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive],
   templateUrl: './opc-entrar.component.html',
-  styleUrl: './opc-entrar.component.css'
+  styleUrls: ['./opc-entrar.component.css']
 })
 export class OpcEntrarComponent {
-  imagemFundo: string = '../../../../assets/astroLog.png';
+  imagemFundo: string = 'assets/astroLog.png'; // Corrigido o caminho da imagem de fundo
+
+  botaoImagemSrc = 'assets/Brazilian_preview.png'; // Caminho inicial da imagem do botão
+
+  // Método para trocar a imagem do botão
+  changeImage() {
+    if (this.botaoImagemSrc === 'assets/Brazilian_preview.png') {
+      this.botaoImagemSrc = 'assets/EUA_preview.png'; // Trocar para imagem dos EUA
+    } else {
+      this.botaoImagemSrc = 'assets/Brazilian_preview.png'; // Trocar para imagem do Brasil
+    }
+  }
 }
